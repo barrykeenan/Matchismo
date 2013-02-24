@@ -17,6 +17,11 @@
 
 @implementation CardGameViewController
 
+- (void)setFlipCount:(int)flipCount{
+	_flipCount = flipCount;
+	self.flipsLabel.text = [NSString stringWithFormat: @"Flips: %d", self.flipCount];
+}
+
 - (IBAction)flipCard:(UIButton *)sender {
     sender.selected = !sender.selected;
 	self.flipCount++;
