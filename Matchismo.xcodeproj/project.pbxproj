@@ -131,10 +131,10 @@
 			children = (
 				9D6D02ED16D9C701009666C6 /* CardGameAppDelegate.h */,
 				9D6D02EE16D9C701009666C6 /* CardGameAppDelegate.m */,
-				9D6D02F616D9C701009666C6 /* MainStoryboard.storyboard */,
-				9D6D032916D9DFC8009666C6 /* Controllers */,
-				9D6D02E516D9C701009666C6 /* Supporting Files */,
 				9D6D031F16D9CFC3009666C6 /* Model */,
+				9D6D032916D9DFC8009666C6 /* Controllers */,
+				9DE0FC8D16DDDF0800083CC5 /* Views */,
+				9D6D02E516D9C701009666C6 /* Supporting Files */,
 			);
 			path = Matchismo;
 			sourceTree = "<group>";
@@ -194,6 +194,14 @@
 				9D6D02FA16D9C701009666C6 /* CardGameViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9DE0FC8D16DDDF0800083CC5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D6D02F616D9C701009666C6 /* MainStoryboard.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
