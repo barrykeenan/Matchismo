@@ -129,9 +129,10 @@
 		9D6D02E416D9C701009666C6 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
+				9D6D02ED16D9C701009666C6 /* CardGameAppDelegate.h */,
+				9D6D02EE16D9C701009666C6 /* CardGameAppDelegate.m */,
 				9D6D02F616D9C701009666C6 /* MainStoryboard.storyboard */,
-				9D6D02F916D9C701009666C6 /* CardGameViewController.h */,
-				9D6D02FA16D9C701009666C6 /* CardGameViewController.m */,
+				9D6D032916D9DFC8009666C6 /* Controllers */,
 				9D6D02E516D9C701009666C6 /* Supporting Files */,
 				9D6D031F16D9CFC3009666C6 /* Model */,
 			);
@@ -141,8 +142,6 @@
 		9D6D02E516D9C701009666C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9D6D02ED16D9C701009666C6 /* CardGameAppDelegate.h */,
-				9D6D02EE16D9C701009666C6 /* CardGameAppDelegate.m */,
 				9D6D02E616D9C701009666C6 /* Matchismo-Info.plist */,
 				9D6D02E716D9C701009666C6 /* InfoPlist.strings */,
 				9D6D02EA16D9C701009666C6 /* main.m */,
@@ -186,6 +185,15 @@
 				9D6D032416D9D26E009666C6 /* PlayingCardDeck.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		9D6D032916D9DFC8009666C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D6D02F916D9C701009666C6 /* CardGameViewController.h */,
+				9D6D02FA16D9C701009666C6 /* CardGameViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +494,7 @@
 				9D6D031516D9C701009666C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D6D031616D9C701009666C6 /* Build configuration list for PBXNativeTarget "MatchismoTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +503,7 @@
 				9D6D031816D9C701009666C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

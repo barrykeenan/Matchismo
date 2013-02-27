@@ -12,10 +12,17 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
+@property (nonatomic, strong) PlayingCardDeck *deck;
 
 @end
 
 @implementation CardGameViewController
+
+- (Deck *)deck
+{
+    if (!_deck) _deck = [[PlayingCardDeck alloc] init];
+    return _deck;
+}
 
 - (void)setFlipCount:(int)flipCount{
 	_flipCount = flipCount;
@@ -23,11 +30,12 @@
 	NSLog(@"flips updated to %d", self.flipCount);
 }
 
-- (IBAction)flipCard:(UIButton *)sender {
-    sender.selected = !sender.selected;
+- (IBAction)flipCard:(UIButton *)cardBtn {
+    cardBtn.selected = !cardBtn.selected;
+	
+	PlayingCard *randomCard = [self.deck drawRandomCard];
+	[cardBtn setTitle:randomCard.contents forState: UIControlStateSelected];
 	self.flipCount++;
 }
-
-
 
 @end
